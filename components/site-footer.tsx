@@ -10,7 +10,7 @@ export function SiteFooter() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
                             <h3 className="text-lg font-bold text-primary mb-4">Lilac</h3>
-                            <p className="text-sm text-muted-foreground leading-relaxed">ボードゲームを通じて楽しい時間を共有するサークルです。 初心者から経験者まで、誰でも歓迎します。</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed">ボードゲームを通じて楽しい時間を共有するコミュニティです。 初心者から経験者まで、誰でも歓迎します。</p>
                         </div>
 
                         <div>
@@ -51,7 +51,7 @@ export function SiteFooter() {
                     </div>
 
                     <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-                        <p>&copy; 2025 ボードゲームサークル Lilac. All rights reserved.</p>
+                        <p>&copy; 2025 ボードゲームコミュニティ Lilac. All rights reserved.</p>
                     </div>
                 </PageContainer>
             </div>

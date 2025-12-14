@@ -3,9 +3,32 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Dice3, Users, Calendar, Heart } from "lucide-react";
+import { Dice3, Users, Calendar, BadgeJapaneseYen, Landmark } from "lucide-react";
 import { PageContainer } from "@/components/page-container";
 import Link from "next/link";
+
+const features = [
+    {
+        title: "居心地のよいコミュニティ",
+        description: "初心者から経験者まで大歓迎。穏和な雰囲気のメンバーが集まり、初めての方でも安心して楽しめます。",
+        Icon: Users,
+    },
+    {
+        title: "5年以上続く、安定した活動実績",
+        description: "Lilacは5年以上にわたり継続して活動してきました。長く続いているからこその信頼と安心感があります。",
+        Icon: Calendar,
+    },
+    {
+        title: "アクセスがよく、快適な会場",
+        description: "駅から徒歩1分の好立地。清潔で落ち着いた空間で、快適にボードゲームを楽しめます。",
+        Icon: Landmark,
+    },
+    {
+        title: "気軽に参加できる参加費",
+        description: "一日たっぷり遊べて参加費は300円。気軽に参加できます。",
+        Icon: BadgeJapaneseYen,
+    },
+];
 
 export default function HomePage() {
     return (
@@ -22,42 +45,25 @@ export default function HomePage() {
                 <section className="py-16">
                     <PageContainer>
                         <div className="text-center mb-12">
-                            <h2 className="text-4xl font-bold mb-4 text-balance">Lilacについて</h2>
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">私たちは、ボードゲームを愛する仲間が集まるサークルです。 毎週楽しくゲームを楽しんでいます。</p>
+                            <h2 className="text-4xl font-bold mb-4">Lilacについて</h2>
+                            <img src="/lilac-logo.png" alt="Lilac コミュニティアイコン" className="mx-auto mb-6 h-32 w-32 rounded-full" />
+                            <p className="text-lg text-muted-foreground font-bold max-w-4xl mx-auto leading-relaxed">
+                                Lilacは、ボードゲーム好きが集まり、月に一度みんなで楽しく遊ぶコミュニティです。
+                                <br />
+                                気軽なゲームを好む人から、じっくり考えるゲームを好む人まで、多様なメンバーが集まっています。
+                            </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <Card className="border-2 hover:border-primary transition-colors">
-                                <CardHeader>
-                                    <Dice3 className="h-10 w-10 text-primary mb-2" />
-                                    <CardTitle>多彩なゲーム</CardTitle>
-                                    <CardDescription>定番から最新作まで、100種類以上のボードゲームを所有しています。</CardDescription>
-                                </CardHeader>
-                            </Card>
-
-                            <Card className="border-2 hover:border-primary transition-colors">
-                                <CardHeader>
-                                    <Users className="h-10 w-10 text-primary mb-2" />
-                                    <CardTitle>温かいコミュニティ</CardTitle>
-                                    <CardDescription>初心者から経験者まで、誰でも歓迎。みんなで楽しく遊びます。</CardDescription>
-                                </CardHeader>
-                            </Card>
-
-                            <Card className="border-2 hover:border-primary transition-colors">
-                                <CardHeader>
-                                    <Calendar className="h-10 w-10 text-primary mb-2" />
-                                    <CardTitle>定期的な活動</CardTitle>
-                                    <CardDescription>毎週末に活動を開催。都合の良い日に気軽に参加できます。</CardDescription>
-                                </CardHeader>
-                            </Card>
-
-                            <Card className="border-2 hover:border-primary transition-colors">
-                                <CardHeader>
-                                    <Heart className="h-10 w-10 text-primary mb-2" />
-                                    <CardTitle>楽しい仲間</CardTitle>
-                                    <CardDescription>ゲームを通じて新しい友達ができる、アットホームな雰囲気です。</CardDescription>
-                                </CardHeader>
-                            </Card>
+                            {features.map(({ title, description, Icon }) => (
+                                <Card key={title} className="border-2 transition-all hover:border-primary hover:shadow-md hover:-translate-y-1">
+                                    <CardHeader>
+                                        <Icon className="h-10 w-10 text-primary mb-2" />
+                                        <CardTitle>{title}</CardTitle>
+                                        <CardDescription>{description}</CardDescription>
+                                    </CardHeader>
+                                </Card>
+                            ))}
                         </div>
                     </PageContainer>
                 </section>

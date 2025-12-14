@@ -53,7 +53,7 @@ export function HeroSlideshow() {
 
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white z-10 px-4">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-4 text-balance">ボードゲームサークル Lilac</h1>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-4 text-balance">ボードゲームコミュニティ Lilac</h1>
                     <p className="text-xl md:text-2xl text-balance">一緒にボードゲームを楽しみましょう</p>
                 </div>
             </div>
