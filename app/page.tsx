@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dice3, Users, Calendar, Heart } from "lucide-react";
+import { PageContainer } from "@/components/page-container";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -12,53 +13,57 @@ export default function HomePage() {
             <SiteHeader />
 
             <main className="flex-1">
-                <section className="container py-8">
-                    <HeroSlideshow />
+                <section className="py-8">
+                    <PageContainer>
+                        <HeroSlideshow />
+                    </PageContainer>
                 </section>
 
-                <section className="container py-16">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold mb-4 text-balance">Lilacについて</h2>
-                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">私たちは、ボードゲームを愛する仲間が集まるサークルです。 毎週楽しくゲームを楽しんでいます。</p>
-                    </div>
+                <section className="py-16">
+                    <PageContainer>
+                        <div className="text-center mb-12">
+                            <h2 className="text-4xl font-bold mb-4 text-balance">Lilacについて</h2>
+                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">私たちは、ボードゲームを愛する仲間が集まるサークルです。 毎週楽しくゲームを楽しんでいます。</p>
+                        </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Card className="border-2 hover:border-primary transition-colors">
-                            <CardHeader>
-                                <Dice3 className="h-10 w-10 text-primary mb-2" />
-                                <CardTitle>多彩なゲーム</CardTitle>
-                                <CardDescription>定番から最新作まで、100種類以上のボードゲームを所有しています。</CardDescription>
-                            </CardHeader>
-                        </Card>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <Card className="border-2 hover:border-primary transition-colors">
+                                <CardHeader>
+                                    <Dice3 className="h-10 w-10 text-primary mb-2" />
+                                    <CardTitle>多彩なゲーム</CardTitle>
+                                    <CardDescription>定番から最新作まで、100種類以上のボードゲームを所有しています。</CardDescription>
+                                </CardHeader>
+                            </Card>
 
-                        <Card className="border-2 hover:border-primary transition-colors">
-                            <CardHeader>
-                                <Users className="h-10 w-10 text-primary mb-2" />
-                                <CardTitle>温かいコミュニティ</CardTitle>
-                                <CardDescription>初心者から経験者まで、誰でも歓迎。みんなで楽しく遊びます。</CardDescription>
-                            </CardHeader>
-                        </Card>
+                            <Card className="border-2 hover:border-primary transition-colors">
+                                <CardHeader>
+                                    <Users className="h-10 w-10 text-primary mb-2" />
+                                    <CardTitle>温かいコミュニティ</CardTitle>
+                                    <CardDescription>初心者から経験者まで、誰でも歓迎。みんなで楽しく遊びます。</CardDescription>
+                                </CardHeader>
+                            </Card>
 
-                        <Card className="border-2 hover:border-primary transition-colors">
-                            <CardHeader>
-                                <Calendar className="h-10 w-10 text-primary mb-2" />
-                                <CardTitle>定期的な活動</CardTitle>
-                                <CardDescription>毎週末に活動を開催。都合の良い日に気軽に参加できます。</CardDescription>
-                            </CardHeader>
-                        </Card>
+                            <Card className="border-2 hover:border-primary transition-colors">
+                                <CardHeader>
+                                    <Calendar className="h-10 w-10 text-primary mb-2" />
+                                    <CardTitle>定期的な活動</CardTitle>
+                                    <CardDescription>毎週末に活動を開催。都合の良い日に気軽に参加できます。</CardDescription>
+                                </CardHeader>
+                            </Card>
 
-                        <Card className="border-2 hover:border-primary transition-colors">
-                            <CardHeader>
-                                <Heart className="h-10 w-10 text-primary mb-2" />
-                                <CardTitle>楽しい仲間</CardTitle>
-                                <CardDescription>ゲームを通じて新しい友達ができる、アットホームな雰囲気です。</CardDescription>
-                            </CardHeader>
-                        </Card>
-                    </div>
+                            <Card className="border-2 hover:border-primary transition-colors">
+                                <CardHeader>
+                                    <Heart className="h-10 w-10 text-primary mb-2" />
+                                    <CardTitle>楽しい仲間</CardTitle>
+                                    <CardDescription>ゲームを通じて新しい友達ができる、アットホームな雰囲気です。</CardDescription>
+                                </CardHeader>
+                            </Card>
+                        </div>
+                    </PageContainer>
                 </section>
 
                 <section className="bg-secondary/30 py-16">
-                    <div className="container">
+                    <PageContainer>
                         <div className="text-center mb-12">
                             <h2 className="text-4xl font-bold mb-4 text-balance">活動内容</h2>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">毎週末、さまざまなボードゲームで楽しく遊んでいます</p>
@@ -98,43 +103,45 @@ export default function HomePage() {
                                 </CardContent>
                             </Card>
                         </div>
-                    </div>
+                    </PageContainer>
                 </section>
 
-                <section className="container py-16">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold mb-4 text-balance">リンク</h2>
-                    </div>
+                <section className="py-16">
+                    <PageContainer>
+                        <div className="text-center mb-12">
+                            <h2 className="text-4xl font-bold mb-4 text-balance">リンク</h2>
+                        </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                        <Card className="hover:shadow-lg transition-shadow">
-                            <CardHeader>
-                                <CardTitle>メンバー紹介</CardTitle>
-                                <CardDescription>Lilacのメンバーを紹介します</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Link href="/members">
-                                    <Button className="w-full">メンバーを見る</Button>
-                                </Link>
-                            </CardContent>
-                        </Card>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                            <Card className="hover:shadow-lg transition-shadow">
+                                <CardHeader>
+                                    <CardTitle>メンバー紹介</CardTitle>
+                                    <CardDescription>Lilacのメンバーを紹介します</CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <Link href="/members">
+                                        <Button className="w-full">メンバーを見る</Button>
+                                    </Link>
+                                </CardContent>
+                            </Card>
 
-                        <Card className="hover:shadow-lg transition-shadow">
-                            <CardHeader>
-                                <CardTitle>活動記録</CardTitle>
-                                <CardDescription>これまでの活動の様子をご覧ください</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Link href="/activities">
-                                    <Button className="w-full">活動記録を見る</Button>
-                                </Link>
-                            </CardContent>
-                        </Card>
-                    </div>
+                            <Card className="hover:shadow-lg transition-shadow">
+                                <CardHeader>
+                                    <CardTitle>活動記録</CardTitle>
+                                    <CardDescription>これまでの活動の様子をご覧ください</CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <Link href="/activities">
+                                        <Button className="w-full">活動記録を見る</Button>
+                                    </Link>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </PageContainer>
                 </section>
 
                 <section className="bg-secondary/30 py-16">
-                    <div className="container">
+                    <PageContainer>
                         <div className="text-center mb-12">
                             <h2 className="text-4xl font-bold mb-4 text-balance">主な活動場所</h2>
                         </div>
@@ -170,16 +177,18 @@ export default function HomePage() {
                                 </CardContent>
                             </Card>
                         </div>
-                    </div>
+                    </PageContainer>
                 </section>
 
                 <section className="bg-primary text-primary-foreground py-16">
-                    <div className="container text-center">
-                        <h2 className="text-4xl font-bold mb-4 text-balance">一緒にボードゲームを楽しみませんか？</h2>
-                        <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed text-balance">見学や体験参加も大歓迎です。お気軽にご連絡ください。</p>
-                        <Button size="lg" variant="secondary">
-                            お問い合わせ
-                        </Button>
+                    <div className="text-center">
+                        <PageContainer>
+                            <h2 className="text-4xl font-bold mb-4 text-balance">一緒にボードゲームを楽しみませんか？</h2>
+                            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed text-balance">見学や体験参加も大歓迎です。お気軽にご連絡ください。</p>
+                            <Button size="lg" variant="secondary">
+                                お問い合わせ
+                            </Button>
+                        </PageContainer>
                     </div>
                 </section>
             </main>
