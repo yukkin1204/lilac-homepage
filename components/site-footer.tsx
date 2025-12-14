@@ -51,7 +51,7 @@ export function SiteFooter() {
                     </div>
 
                     <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-                        <p>&copy; 2025 ボードゲームコミュニティ Lilac. All rights reserved.</p>
+                        <p>&copy; 2025 大阪ボードゲーム会 Lilac. All rights reserved.</p>
                     </div>
                 </PageContainer>
             </div>

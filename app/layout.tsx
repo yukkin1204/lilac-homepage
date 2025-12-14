@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "ボードゲームコミュニティ Lilac",
-    description: "ボードゲームを楽しむコミュニティLilacのホームページです。一緒にボードゲームで遊びましょう！",
+    title: "大阪ボードゲーム会 Lilac",
+    description: "The Best Boardgame Moments!",
     generator: "v0.app",
     icons: {
         icon: [

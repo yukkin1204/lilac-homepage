@@ -6,19 +6,19 @@ import { Button } from "@/components/ui/button";
 
 const images = [
     {
-        url: "/people-playing-board-games-around-table-laughing.jpg",
+        url: "/images/slide/slide1.jpeg",
         alt: "ボードゲームで遊んでいる様子",
     },
     {
-        url: "/colorful-board-game-pieces-on-game-board.jpg",
+        url: "/images/slide/slide2.jpeg",
         alt: "カラフルなボードゲーム",
     },
     {
-        url: "/group-of-friends-enjoying-board-game-night.jpg",
+        url: "/images/slide/slide3.jpeg",
         alt: "友達とゲーム会",
     },
     {
-        url: "/board-game-collection-on-shelves.jpg",
+        url: "/images/slide/slide4.jpeg",
         alt: "ボードゲームコレクション",
     },
 ];
@@ -47,14 +47,14 @@ export function HeroSlideshow() {
             {images.map((image, index) => (
                 <div key={index} className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100" : "opacity-0"}`}>
                     <img src={image.url || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent" />
                 </div>
             ))}
 
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white z-10 px-4">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-4 text-balance">ボードゲームコミュニティ Lilac</h1>
-                    <p className="text-xl md:text-2xl text-balance">一緒にボードゲームを楽しみましょう</p>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">大阪ボードゲーム会 Lilac</h1>
+                    <p className="text-3xl md:text-4xl drop-shadow-md">The Best Boardgame Moments!</p>
                 </div>
             </div>
 

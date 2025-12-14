@@ -10,22 +10,22 @@ import Link from "next/link";
 const features = [
     {
         title: "居心地のよいコミュニティ",
-        description: "初心者から経験者まで大歓迎。穏和な雰囲気のメンバーが集まり、初めての方でも安心して楽しめます。",
+        description: "穏和な雰囲気のメンバーが集まっているため、初めての方でも安心して楽しめます。",
         Icon: Users,
     },
     {
         title: "5年以上続く、安定した活動実績",
-        description: "Lilacは5年以上にわたり継続して活動してきました。長く続いているからこその信頼と安心感があります。",
+        description: "Lilacは5年以上にわたり継続して活動しました。信頼と安心感があるコミュニティです。",
         Icon: Calendar,
     },
     {
         title: "アクセスがよく、快適な会場",
-        description: "駅から徒歩1分の好立地。清潔で落ち着いた空間で、快適にボードゲームを楽しめます。",
+        description: "会場は駅から徒歩1分。清潔で落ち着いた空間で、快適にボードゲームを楽しめます。",
         Icon: Landmark,
     },
     {
         title: "気軽に参加できる参加費",
-        description: "一日たっぷり遊べて参加費は300円。気軽に参加できます。",
+        description: "一日たっぷり遊べて参加費はなんと300円。気軽に参加できます。",
         Icon: BadgeJapaneseYen,
     },
 ];
@@ -46,9 +46,11 @@ export default function HomePage() {
                     <PageContainer>
                         <div className="text-center mb-12">
                             <h2 className="text-4xl font-bold mb-4">Lilacについて</h2>
-                            <img src="/lilac-logo.png" alt="Lilac コミュニティアイコン" className="mx-auto mb-6 h-32 w-32 rounded-full" />
+                            <img src="/images/lilac-logo.png" alt="Lilac コミュニティアイコン" className="mx-auto mb-6 h-32 w-32 rounded-full" />
                             <p className="text-lg text-muted-foreground font-bold max-w-4xl mx-auto leading-relaxed">
-                                Lilacは、ボードゲーム好きが集まり、月に一度みんなで楽しく遊ぶコミュニティです。
+                                Lilacは大阪府吹田市のボードゲームコミュニティです。
+                                <br />
+                                月に一度、休日に活動しています。
                                 <br />
                                 気軽なゲームを好む人から、じっくり考えるゲームを好む人まで、多様なメンバーが集まっています。
                             </p>
