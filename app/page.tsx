@@ -136,23 +136,21 @@ export default function HomePage() {
                 <section className="bg-secondary/30 py-16">
                     <div className="container">
                         <div className="text-center mb-12">
-                            <h2 className="text-4xl font-bold mb-4 text-balance">活動場所</h2>
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">アクセスしやすい場所で活動しています</p>
+                            <h2 className="text-4xl font-bold mb-4 text-balance">主な活動場所</h2>
                         </div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
                             <Card>
                                 <CardHeader>
-                                    <CardTitle>主な活動場所</CardTitle>
+                                    <CardTitle>千里ニュータウンプラザ6階 ラコルタ</CardTitle>
                                 </CardHeader>
                                 <CardContent className="space-y-4">
                                     <div>
-                                        <h3 className="font-semibold mb-2">コミュニティセンター A</h3>
-                                        <p className="text-sm text-muted-foreground mb-1">〒100-0001 東京都千代田区千代田1-1-1</p>
-                                        <p className="text-sm text-muted-foreground">最寄り駅：東京駅 徒歩5分</p>
+                                        <p className="text-sm leading-relaxed">大阪府吹田市津雲台1丁目2番1号 千里ニュータウンプラザ6階 ラコルタ</p>
+                                        <p className="text-sm leading-relaxed">最寄り駅：南千里駅 徒歩1分</p>
                                     </div>
                                     <div className="pt-2">
-                                        <p className="text-sm leading-relaxed">駅から近く、広々とした会議室で快適に遊べます。週末は主にこちらで活動しています。</p>
+                                        <p className="text-sm leading-relaxed">駅から近く、綺麗な部屋で快適に遊べます</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -160,7 +158,7 @@ export default function HomePage() {
                             <Card className="h-full">
                                 <CardContent className="p-0">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853992994!2d139.7640572!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.512428969997!2d135.50589667625755!3d34.793047772886965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e4b523619289%3A0x27920573b9ee5440!2z44Op44Kz44Or44K_772c5ZC555Sw5biC56uL5biC5rCR5YWs55uK5rS75YuV44K744Oz44K_44O8!5e0!3m2!1sja!2sjp!4v1765708544604!5m2!1sja!2sjp"
                                         width="100%"
                                         height="400"
                                         style={{ border: 0 }}
